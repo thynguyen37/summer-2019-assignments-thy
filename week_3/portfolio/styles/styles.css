@@ -10,10 +10,10 @@ header {
     border: 1px black dotted;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightgray;
-    font-size: 30px;
+    background-color: white;
+    font-size: 25px;
     font-family: sans-serif;
-    color: cornflowerblue;
+    
 }
 
 main {
@@ -22,7 +22,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    font-size: 26px, color: darkcyan;
+    font-size: 25px, color: darkcyan;
+    text-align: center;
 }
 
 footer {
@@ -30,11 +31,12 @@ footer {
     border: 1px black dotted;
     margin: 0 auto;
     background-color: white;
-    font-size: 24px, color: darkorange;
+    font-size: 25px, color: darkorange;
+    text-align: center;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 80px;
     font-family: cursive;
     color: black;
     text-align: center;
@@ -61,6 +63,14 @@ a {
     font-size: 25px;
     font-family: "Arial";
     color: aqua;
+}
+
+#intro-image {
+    text-align: center;
+}
+
+#intro-image img {
+    width: 500px;
 }
 
 a:link {
