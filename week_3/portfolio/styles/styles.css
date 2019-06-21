@@ -4,6 +4,13 @@ body {
     background-size: cover;
 }
 
+#container {
+    width: 700px;
+    border: 1px black dotted;
+    margin: auto;
+    background-color: white;
+}
+
 header {
     
     width: 700px;
@@ -45,18 +52,22 @@ h1 {
 p {
     font-size: 25px;
     font-family: "Arial", sans-serif;
-    color: darkblue;
+    color: darkcyan !important;
 }
 
 p, li, a {
     font-size: 30px;
     font-family: "Arial", sans-serif;
     color: darkblue;
-    color: blue 2px solid;
+    color: orange; 2px solid;
 }
 
 li {
-    border: solid red 2px;
+    display: inline;
+    margin: 20px;
+    border: solid #ff0000 1px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 a {
@@ -65,16 +76,33 @@ a {
     color: aqua;
 }
 
+/* Text style ends */
+
+/* Image style starts */
+
 #intro-image {
     text-align: center;
 }
 
 #intro-image img {
     width: 500px;
+    border-radius: 50%;
 }
+
+#intro-image #cup {
+    border-radius: 50%;
+    opacity: .50;
+}
+
+#koala img {
+    border-radius: 40%;
+    opacity: .25;
+}
+/* Anchor Pseudo Classes */
 
 a:link {
     color: hotpink;
+    text-decoration: none;
 }
 
 a:visited {
@@ -83,15 +111,17 @@ a:visited {
 
 a:hover {
     color: forestgreen;
+    text-decoration: underline;
+    font-size: 22px;
 }
 
 a:active {
     color: yellow;
+    text-decoration-line: underline;
 }
 
-li {
-    font-size: 25px;
-    font-family: sans-serif;
-    color: burlywood;
+ul {
+    list-style: square;
 }
+
     
