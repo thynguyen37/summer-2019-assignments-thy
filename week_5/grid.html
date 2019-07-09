@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>Grids</title>
+    
+    <!-- CSS INTERNAL STYLESHEET -->
+    <style>
+        #container {
+            display: grid;
+            border: 2px solid black;
+            grid-template-columns: 1fr 1fr 2fr 1fr;
+        }
+        
+        #container > div {
+            font-size: 72px;
+            border: 1px solid red;
+        }
+        #special7 {
+            grid-column-start: 3;
+            grid-column-end: 5;  
+        }
+        #special1 {
+            grid-column-start: 1;
+            grid-column-end: 3; 
+        }
+    </style>
+    
+    </head>
+ 
+<!— HTML Content —>
+<body>
+    
+    <div id="container">
+        
+        <div id="special1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div id="special7">7</div> 
+    </div>
+    <div></div>   
+</body>  
+    
+</html>
