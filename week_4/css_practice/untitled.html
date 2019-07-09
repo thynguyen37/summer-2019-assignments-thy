@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>CSS Practice</title>
+    
+    <style>
+        
+        body {
+        background-color: #bdc3c7;
+        }
+        
+        .special {
+        font-size: 24px;
+        }
+        span.special {
+        text-decoration: line-through underline overline;
+        }
+        p span.special {
+        text-decoration: underline;
+        }
+        
+        .h1 special {
+        text-decoration: line-through;
+        }
+        
+        h1, p {}
+        h1 p {}
+        
+        #outer .inner {}
+    
+    </style>
+</head>
+    
+    
+<body>
+    <div id="container">
+        
+        <div id="outer">
+            <p class="inner">I am inside the outer div.</p>
+            <p class="special">I am special.</p>
+        </div>
+        <p>Hello <span class="special">there</span>, I am a p tag.</p>
+        <h1>How are you <span class="special">doing</span>, I am an h1 tag.</h1>
+    
+    </div>
+    
+</body>
+    
+    
+</html>

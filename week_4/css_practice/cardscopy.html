@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>CSS Practice</title>
+    
+    <style>
+        .hand {
+            margin-top: 100px;
+        }
+        .card {
+            width: 320px;
+            height: 445px;
+            border: 1px black solid;
+            border-radius: 20px;
+            position: absolute;
+            background-color: white;
+            margin-top: 50px;
+        }
+        
+        .card img {
+        margin-left: 8px;
+        }
+        
+        .card>p {
+            font-family: "Arial", sans-serif;
+            font-size: 48px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        #first {
+            left: 10px;
+            top: 10px;
+        }
+        #first img {
+            width: 30px;
+        }
+        #second {
+            left: 80px;
+            top: 80px;
+        }
+        #second img {
+            width: 30px;
+        }
+        #third {
+            top: 150px;
+            left: 150px;
+            background-color: pink;
+        }
+        #third img {
+            width: 30px;
+        }
+        #fourth {
+            top: 220px;
+            left: 220px;
+        
+        }
+        #fourth img {
+            width: 30px;
+        }
+        #fifth {
+            top: 290px;
+            left: 290px;
+            
+        }
+        #fifth img{
+            width: 30px;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        .black {
+            color: black;
+        }
+           
+    </style>
+
+</head>
+    
+<body>
+    <p>this is a poker hand.</p>
+    
+    <div id="hand">
+        
+        <div class="card red" id="first">
+            <p>A</p>
+            <img src="images/card2redheart.svg" />
+        </div>
+        <div class="card red" id="second">
+            <p>A</p>
+            <img src="images/card2redheart.svg" />
+        </div>
+        <div class="card black" id="third">
+            <p>A</p>
+            <img src="images/card3blackclover.svg" />
+        </div>
+        <div class="card red" id="fourth">
+            <p>A</p>
+            <img src="images/card2redheart.svg" />
+        </div>
+        <div class="card black" id="fifth">
+            <p>9</p>
+            <img src="images/card4blackspade.svg" />
+        </div>
+        
+    </div>
+    
+</body>
+    
+    
+</html>

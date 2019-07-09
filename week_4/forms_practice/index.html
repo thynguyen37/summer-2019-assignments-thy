@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>HTML Forms Practice</title>
+    
+    <!-- CSS INTERNAL STYLESHEET -->
+    <style> 
+        #textstuff {
+            width: 150px;
+            height: 50px;
+            border-radius: 30%;
+            border: 1px solid gray;
+            padding: 10px;
+            font-size: 24px;
+            background-color: azure;
+            color: seagreen;
+            text-shadow: 2px 2px #DDDDDD;    
+        }
+        #textstuff::placeholder {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+    </head>
+    
+<body>
+    <form>
+        <form action="http://www.google.com"/>
+        
+        <label for="textstuff">Phone Number: </label>
+        <input id="textstuff" type="text" placeholder="your phone number" />
+        
+        <label for="single">Single:</label>
+        <input id="single" type="radio" value="single" name="marital" />
+        
+        <label for="married">Married:</label>
+        <input id="married" type="radio" value="married" name="marital" />
+        
+        <label for="divorced">Divorced:</label>
+        <input id="divorced" type="radio" value="divorced" name="marital" />
+        
+        <label for="decline">Decline To Say:</label>
+        <input id="decline" type="radio" value="decline" name="marital" />
+        
+        <input type="password" />
+        
+        <input type="number" />
+        
+        <input type="search" />
+        
+        <input type="submit" />
+        
+        <input type="reset" />
+        
+        <label for="color1">Black</label>
+        <input id="color1" type="checkbox" value="black" name="color1" />
+        
+        <label for="color2">White</label>
+        <input id="color2" type="checkbox" value="white" name="color2" />
+        
+        <textarea cols="100" rows="3" maxlength="250" minlength="10"></textarea>
+        
+        <button>Submit Here</button>
+        
+        <label for="location">Where do you live</label>
+        <select id="location" name="location">
+            <option value="sf">San Francisco</option>
+            <option value="la">Los Angeles</option>
+            <option value="tu">Tulare</option>
+        </select>
+    
+    </form>
+</body>
+</html>

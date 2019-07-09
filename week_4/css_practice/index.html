@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>CSS Practice</title>
+    
+    
+    <!-- CSS Internal StyleSheet -->
+    <style>
+        
+        body {
+            background-color: deepskyblue;
+        }
+        
+        main p {
+            color: white;
+        }
+        main {
+        color: 
+        }
+        
+        /* select all mains within all divs within body. */
+        body main p {
+        color: yellow;
+        }
+        
+        body div main p {}
+        
+        body div div main p {
+            color: red;
+        }
+        div main p {
+        color: white;
+        }
+        
+        /* Direct Child Selector. There should be a main that is a direct Child of div which should be a direct chld of body. */
+        
+        body > div > main p {
+            color: cyan;
+        }
+    
+        main:nth-child(2) {}
+        
+        #bolded {
+            font-weight: bold;
+        }
+        .class {
+        font-size: 28px;
+        }
+        
+    
+        span {
+        color: purple;
+        }
+        
+        #italicized {
+            font-style: italic;
+        }
+        
+        .odd {
+        text-decoration: underline;
+        }
+        
+        #odd1, #odd2, #odd3 {
+        text-decoration: underline;
+        }
+        
+    </style>
+    
+</head>
+    
+<body>
+    
+    <div id="container">
+        <header>
+            <h1>Header</h1>
+            <p>This is the <span id="bolded">header</span> section.</p>
+        </header>
+        <main>
+            <h1>Main</h1>
+            <p>This is <span class="bolded"> the main</span> section.</p>
+            
+            <ul>
+                <li id="odd1"><span class="odd">List 1</span></li>
+                <li id="odd2">List 2</li>
+                <li id="odd2">List 2</li>
+                <li id="odd3">List 3</li>
+                <li>List 4</li>
+            </ul>
+        </main>
+            <div id="anothercontainer">
+                <main>main 2nd</main>
+            </div>
+        <footer>
+            <h1>Footer</h1>
+            <p>This is the <span id="italicized">footer</span> section.</p>
+        </footer>
+    </div>
+    
+</body>
+    
+    
+</html>
