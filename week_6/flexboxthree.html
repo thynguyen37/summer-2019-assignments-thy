@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+      
+<head>
+    <meta charset="utf-8">
+      
+    <title>flexbox practice</title>
+    
+    <!-- CSS INTERNAL STYLESHEET -->
+    <style>
+        #grid {
+            display: grid;
+            width: 500px;
+            height: 250px;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: solid 1px black;
+            box-sizing: border-box;
+        }
+        #grid > div {  
+        }
+        #longer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: solid 1px black;
+            margin-top: -1px;
+            margin-left: -1px;
+        }
+        #flex {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            width: 500px;
+            height: 250px; /* Follow UP */
+            border: solid 1px black;
+        }
+        #flex > div {
+            width: 164px;
+            flex-grow: 1;    
+        }
+        #first {
+            width: 328px !important;
+            border: 1px solid black;
+            margin-left: -1px;
+            margin-left: -1px;
+        }
+    </style>
+    
+    </head>
+ 
+<!— HTML Content —>
+<body>
+    
+    <h1>Grid Version Warm UP</h1>
+    <div id="grid">
+        <div id="longer"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>   
+    </div>
+    
+    <h1>Flex-box Version of Warm Up</h1>
+    
+    <div id="flex">
+        <div id="first"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>  
+    
+</html>
